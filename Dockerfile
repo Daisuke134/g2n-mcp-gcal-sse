@@ -45,9 +45,6 @@ RUN mkdir -p /app/data && \
 RUN mkdir -p /usr/src/app/logs && \
     chown -R node:node /usr/src/app/logs
 
-# Define volume para persistência de tokens
-VOLUME ["/app/data"]
-
 # Expõe a porta configurada ou 3001 como padrão
 EXPOSE ${PORT:-3001}
 
